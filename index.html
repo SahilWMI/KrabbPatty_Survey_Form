@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form for a chance to win a free Krabby Patty!</p>
+    <form id="survey-form">
+
+
+      <fieldset>
+        <label id="name-label" for="name">
+        name:
+        <input id="name" type="text" class="inline" required placeholder="Spongebob">
+        </label>
+
+        <label id="email-label" for="email">
+        email:
+        <input id="email" type="email" required class="inline" placeholder="Bobert@krabbyPatty">
+        </label>
+
+      </fieldset>
+
+
+      <fieldset>
+
+      <label id="number-label" for="number">
+        Enter your age(years):
+        <input id="number"type="number" min="9" max="99" placeholder="15" required>
+      </label>
+      </fieldset>
+
+
+      <fieldset>
+          Are you an actice employee at Krusty Krabs?(required)
+
+        <label for=>
+          <input type="radio" id="isEmployee" class="inline" name="employee-check" value="1" checked>
+          No
+        </label>
+
+        <label>
+          <input type="radio" id="isNotEmployee" class="inline" name="employee-check" value="2">
+          Yes
+        </label>
+      </fieldset>
+
+
+      <fieldset>
+
+        <legend>
+        Which Krabby Patties do you like:
+        <legend>
+          <label>
+            <input type="checkbox" class="inline" name="patty-options" value="1">
+            Classic Krabby Patty
+          </label>
+          <label>
+            <input type="checkbox" class="inline" name="patty-options" value="2">
+        Spicy Krabby Patty
+          </label>
+          <label>
+            <input type="checkbox" class="inline" name="patty-options" value="3">
+        Cheesy Krabby Patty
+          </label>
+          <label>
+            <input type="checkbox" class="inline" name="patty-options" value="4">
+        Veggie Krabby Patty
+          </label>
+          <label>
+            <input type="checkbox" class="inline" name="patty-options" value="5">
+        Seaweed Krabby Patty
+          </label>
+
+
+      </fieldset>
+
+
+      <fieldset>
+        
+        <label>
+        How did you hear about?
+          <select id="dropdown">
+            <option value="">(Please select one)</option>
+            <option value="1">Bikini Bottom</option>
+            <option value="2">Krusty Krabs</option>
+            <option value="3">Chum Bucket</option>
+            <option value="4">Goo Lagoon</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Tell us your bio:
+          <textarea rows="6" placeholder="I like Krabby Patties..."></textarea>
+        </label>
+
+      </fieldset>
+
+      <input id="submit" type="Submit">
+
+    </form>
+  </body>
+</html>
